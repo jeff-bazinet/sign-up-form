@@ -87,8 +87,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -117,9 +115,9 @@ body {
 }
 
 @font-face {
-  font-family: Neuropol;
+  font-family: Nasalization;
   /* src: url(../fonts/neuropol_x_rg-webfont.woff); */
-  src: url(../fonts/neuropol-x-rg.otf);
+  src: url(../fonts/nasalization_rg-webfont.woff2);
 }
 
 .header-text {
@@ -129,53 +127,77 @@ body {
 h2,
 h3,
 p {
-  font-family: Neuropol;
+  font-family: 'Roboto', sans-serif;
 }
 
-h2{
+h2 {
   /* font-weight: 800; */
   font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+}
+
+label{
   color: #FFF;
 }
 
 div.container {
   display: flex;
-  border: 5px solid red;
   width: 1400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 div.left {
-  border: 2px solid orange;
   height: 70vh;
   width: 600px;
 }
 
 div.right {
   flex: 1;
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
 }
 
 .header {
   flex: 1;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 50px 30px;
+  padding: 50px 50px;
 }
 
 .main {
   flex: 1;
-  border: 1px solid red;
   display: flex;
-  flex-wrap: wrap;
-  padding: 30px 10px;
+  flex-direction: column;
+  padding: 50px 0 50px 50px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 2px -2px rgba(255, 255, 255, 0.2);
+  border: 1px solid pink;
+  gap: 20px;
+}
+
+.form-container{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid green;
+}
+
+.form-left{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  border: 1px solid red;
+}
+
+.form-right{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  border: 1px solid red;
 }
 
 .footer {
   flex: 1;
-  border: 1px solid pink;
 }
