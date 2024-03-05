@@ -1,107 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+*{
   margin: 0;
   padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+  box-sizing: border-box;
 }
 
 body {
@@ -120,27 +20,6 @@ body {
   src: url(../fonts/nasalization_rg-webfont.woff2);
 }
 
-.header-text {
-  color: white;
-}
-
-h2,
-h3,
-p {
-  font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-  /* font-weight: 800; */
-  font-size: 32px;
-  font-weight: 300;
-  color: #fff;
-}
-
-label{
-  color: #FFF;
-}
-
 div.container {
   display: flex;
   width: 1400px;
@@ -148,14 +27,18 @@ div.container {
 }
 
 div.left {
-  height: 70vh;
-  width: 600px;
+  height: 80vh;
+  width: 520px;
+  overflow: hidden;
+  border: 2px solid green;
 }
 
 div.right {
   flex: 1;
   display: flex;
   flex-direction: column;
+  /* justify-content: space-between; */
+  border: 2px solid green;
 }
 
 .header {
@@ -164,7 +47,8 @@ div.right {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 50px 50px;
+  padding: 100px 50px 0px 50px;
+  border: 2px solid pink;
 }
 
 .main {
@@ -200,4 +84,31 @@ div.right {
 
 .footer {
   flex: 1;
+  border: 2px solid pink;
+}
+
+.header-text-top, .header-text-bottom {
+  color: #FFF;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.header-text-top{
+  margin-bottom: -100px;
+}
+
+h2,
+h3,
+p, .main.h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+label{
+  color: #FFF;
+}
+
+.main h2{
+  color: #FFF;
+  font-size: 26px;
+  font-weight: 400;
 }
