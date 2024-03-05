@@ -173,6 +173,11 @@ input:focus{
   background-color: rgba(151, 175, 255, 0.5);
   outline-width: 0;
 }
+
+.invalid{
+  background-color: rgba(173, 32, 32, 0.2);
+}
+
 .create-account-btn {
   border-radius: 5px;
   width: 200px;
@@ -183,5 +188,7 @@ input:focus{
   border: none;
   background-color: rgba(94, 130, 245, 0.2);
 }
+
+
 
 
