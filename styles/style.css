@@ -8,7 +8,6 @@
 /* Fonts and Typography */
 @font-face {
   font-family: Nasalization;
-  /* src: url(../fonts/neuropol_x_rg-webfont.woff); */
   src: url(../fonts/nasalization_rg-webfont.woff2);
 }
 
@@ -28,7 +27,7 @@ h3,
 p,
 .main.h2,
 label,
-a {
+a, input {
   font-family: 'Roboto', sans-serif;
   color: #fff;
 }
@@ -83,7 +82,6 @@ div.container {
 
 .logo {
   position: absolute;
-  /* left: 220px; */
   top: 175px;
   background-color: #ffffff23;
   color: #ffffff;
@@ -167,9 +165,14 @@ input {
   width: 240px;
   height: 35px;
   border-radius: 5px;
-  background-color: rgba(94, 130, 245, 0.2);
+  background-color: rgba(151, 175, 255, 0.2);
+  padding: 5px 5px;
 }
 
+input:focus{
+  background-color: rgba(151, 175, 255, 0.5);
+  outline-width: 0;
+}
 .create-account-btn {
   border-radius: 5px;
   width: 200px;
@@ -180,3 +183,5 @@ input {
   border: none;
   background-color: rgba(94, 130, 245, 0.2);
 }
+
+
