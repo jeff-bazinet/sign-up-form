@@ -27,9 +27,16 @@ h2,
 h3,
 p,
 .main.h2,
-label, a {
+label,
+a {
   font-family: 'Roboto', sans-serif;
   color: #fff;
+}
+
+h1 {
+  font-family: 'Nasalization', sans-serif;
+  font-size: 56px;
+  letter-spacing: 10px;
 }
 
 .main h2 {
@@ -67,10 +74,26 @@ div.container {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-div.left {
+.left {
   height: 80vh;
   width: 520px;
   overflow: hidden;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  /* left: 220px; */
+  top: 175px;
+  background-color: #ffffff23;
+  color: #ffffff;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
 }
 
 div.right {
